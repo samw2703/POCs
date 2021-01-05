@@ -1,4 +1,5 @@
-﻿using System.Data;
+﻿using System;
+using System.Data;
 using System.Net;
 using System.Net.Http;
 using Dapper;
@@ -17,6 +18,7 @@ namespace NetCoreUbuntu1804Deployment.Controllers
 		[HttpGet]
 		public string Get()
 		{
+			Console.WriteLine( "hey" );
 			using ( var connection = CreateConnection() )
 			{
 				const string sql = "select Value from Message limit 1";
