@@ -36,7 +36,7 @@ namespace NetCoreApiSample3._1
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
 
